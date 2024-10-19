@@ -20,10 +20,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "TvApp"
-<<<<<<< Updated upstream
-include(":app")
- 
-=======
 include(
     ":app",
     ":modules:designsystem",
@@ -32,4 +28,3 @@ include(
     ":core:feature:home:data",
     ":core:feature:home:domain",
 )
->>>>>>> Stashed changes

@@ -3,19 +3,18 @@ agp = "8.7.0"
 kotlin = "2.0.0"
 coreKtx = "1.13.1"
 appcompat = "1.7.0"
-composeBom = "2024.04.01"
-tvFoundation = "1.0.0-alpha07"
-tvMaterial = "1.0.0-alpha07"
+composeBom = "2024.10.00"
+tvFoundation = "1.0.0-alpha11"
+tvMaterial = "1.0.0"
 lifecycleRuntimeKtx = "2.8.6"
 activityCompose = "1.9.3"
-<<<<<<< Updated upstream
-=======
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 material = "1.12.0"
 jetbrainsKotlinJvm = "2.0.0"
->>>>>>> Stashed changes
+hilt = "2.46"
+ksp = "2.0.20-1.0.25"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -31,21 +30,20 @@ androidx-tv-foundation = { group = "androidx.tv", name = "tv-foundation", versio
 androidx-tv-material = { group = "androidx.tv", name = "tv-material", version.ref = "tvMaterial" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
-<<<<<<< Updated upstream
-=======
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
->>>>>>> Stashed changes
+
+google-dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+google-dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-<<<<<<< Updated upstream
-=======
 android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
->>>>>>> Stashed changes
 
+google-dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+google-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
